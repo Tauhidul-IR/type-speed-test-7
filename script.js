@@ -41,7 +41,7 @@ const typeController = (e) => {
   userText += newLetter;
 
   const newLetterCorrect = validate(newLetter);
-  console.log(newLetterCorrect)
+  // console.log(newLetterCorrect)
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
@@ -80,7 +80,7 @@ const gameOver = () => {
   // make it inactive
   display.classList.add("inactive");
   // show result
-  console.log(errorCount)
+  // console.log(errorCount)
   resultModal.innerHTML += `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${newTimeTaken}</span> seconds</p>
